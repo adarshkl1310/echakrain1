@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+<div class="w3-top">
+<div class="w3-bar w3-black">
+   <a><%= link_to "E-Chakra Innovations", homes_path,class: "w3-bar-item w3-button w3-green w3-padding-16"%></a>
+   <a><%= link_to "Logout", destroy_user_session_path,method: :delete,class: "w3-bar-item w3-button w3-hide-small w3-padding-16"%></a>
+
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium w3-padding-16 w3-green" onclick="myFunction()">&#9776;</a>
+</div>
+<div id="demo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-hover-green">
+
+</div>
+</div>
+</br>
+</br>
+</br>
+<script>
+function myFunction() {
+  var x = document.getElementById("demo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
+
+</br>
+<div class="col-md-12">
+<h4 class="text-center">E Chakra Innovations</h4>
+<% if @secureechakra.blank? %>
+<h4 class="text-center text-success">No One Trying To Contact Your Company</h4>
+<%else @secureechakra.present? %>
+<h4 class="text-center text-success"><%=@secureechakra.count %> Person Contact You</h4>
+
+<%end%>	
+</div>
+</br>
+<div class="col-md-12">
+<div class="row">
+<%@secureechakra.each do |contact|%>
+<div class="col-md-6">
+<div class="panel panel-default">
+ <div class="panel-heading">
+  <table class="table table-striped">
+<tr>
+        <td class="text-center">Name = <%=contact.name%></td>
+    </tr>
+               <tr> <td class="text-center">Email = <%=contact.email%></td></tr> 
+                <tr><td class="text-center">Number = <%=contact.phone_number%></td></tr> 
+
+               <tr><td class="text-center">Message = <%=contact.message%></td></tr> 
+</br>
+ <tr> <td class="text-center"><%= link_to "Delete",contact, method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-danger"%></td></tr> 
+
+</table> 
+</div>
+</div>
+</div>
+
+<%end%>
+
+</div>
+</div>
+

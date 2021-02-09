@@ -1,0 +1,2 @@
+class Secureechakra < ApplicationRecord
+end

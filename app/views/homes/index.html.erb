@@ -1,0 +1,250 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Echakra Innovations</title>
+	
+	<!-- Meta tag Keywords -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta name="keywords" content="Activity Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+	<!-- scroll top script when refresh a page
+	<script type="application/x-javascript">
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<!--// Meta tag Keywords -->
+    
+	<!-- css files -->
+	<link rel="stylesheet" href="css/bootstrap.css"> <!-- Bootstrap-Core-CSS -->
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" /> <!-- Style-CSS --> 
+	<link rel="stylesheet" href="css/font-awesome.min.css"> <!-- Font-Awesome-Icons-CSS -->
+	<!-- //css files -->
+	
+	<!--web font--><link href="//fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&amp;subset=latin-ext" rel="stylesheet">
+	<!--//web font-->
+
+</head>
+
+<body>
+
+<!-- //header -->
+<header>	
+	<div class="container" id="home">
+		<!-- nav -->
+		<nav class="py-4">
+        <div id="logo">
+			<h1> <a href="#index.html"><span class="fa fa-recycle" aria-hidden="true"></span>Echakra</a></h1>
+		</div>
+
+        <label for="drop" class="toggle">Menu</label>
+        <input type="checkbox" id="drop" />
+            <ul class="menu mt-2">
+                <li class="mr-lg-4 mr-3 active"><a href="#">Home</a></li>
+                <li class="mr-lg-4 mr-3"><a href="#about">About</a></li>
+                <li class="mr-lg-4 mr-3"><a href="#services">Services</a></li>
+                <li class="mr-lg-4 mr-3"><a href="#experience">Process</a></li>
+                 <li><%= link_to "Login",new_user_session_path,class: "mr-lg-4 mr-3"%></li>
+                <li class="mr-lg-4 mr-3">
+                <!-- First Tier Drop Down -->
+              
+
+                <li><a href="#contact">Contact</a></li>
+
+
+            </ul>
+        </nav>
+		<!-- //nav -->
+	</div>
+</header>
+<!-- //header -->
+		
+<!-- banner -->
+<section class="banner">
+	<div class="banner-layer">
+		<div class="container">
+			<div class="row w3pvt_banner_info">
+				<div class="col-md-8 w3layouts_banner_margin">
+					<h3 class="editContent"></h3>
+					<h2 class="editContent">Echakra Innovations</h2>
+					<p>E-Chakra has a clear focus and vision of giving IT assets a second life along safe and ethical recycling of EOL(End-of-Life)</p>
+					<a href="#contact"> Contact Us </a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- //banner -->	
+
+<!-- about -->
+<section class="about py-5" id="about">
+	<div class="container py-3">
+		<h3 class="heading">About Echakra </h3>
+		<div class="row about-grids">
+			<div class="col-lg-4">
+				<h4 class=""></h4>
+				<p class="my-4">Refreshing IT is inevitable in the IT Lifecycle management, E-Chakra has a clear focus and vision of giving IT assets a second life along safe and ethical recycling of EOL(End-of-Life) electronic equipments.</p>
+				
+			</div>
+			<div class="col-lg-4 col-md-6 my-lg-0 my-5">
+				<%=image_tag ("e-waste1.gif"),class: "img-fluid"%>
+
+			</div>
+			<div class="col-lg-4 bar-grids">
+				<div class="wthree_skills">
+					<h6 class="mb-2"></p>
+					<div class="my-4">
+						<h6 class="mb-2"></h6>
+						<p>We can transform your unused IT equipments from a cost center to a revenue. We are aligned with leading Service Partners to give IT a new lease..</p>
+					</div>
+					<h6 class="mb-2"></h6>
+					<p></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- about -->
+
+<!-- services -->
+<section class="services py-5" id="services">
+	<div class="container py-3">
+		<h3 class="heading">Our Services</h3>
+		<div class="row service-grids">
+			
+			<div class="col-lg-6 col-md-8 w3layouts w3-icon-grid1">
+				<h3><span class="" aria-hidden="true"></span>ITAR (IT Asset recovery)
+</h3>
+				<p>IT asset lecovery is the practice of recovering funds from your unused /EOL IT equipment. These funds off-set the expenses incurred by ITAD (Recycling Services, Data Destruction Services and Logistis)</p>
+			</div>
+
+			<div class="col-lg-6 col-md-8 w3layouts mt-md-0 mt-sm-5 mt-4 w3-icon-grid1">
+				<h3><span class="" aria-hidden="true"></span>ITAD (IT Asset Disposition)
+</h3>
+				<p>ITAD is the process of disposing of your unused IT assets.This includes ethical recycling of EOL electronic equipments, Data Destruction, Refurbishment.</p>
+			</div>
+
+			<div class="col-lg-6 col-md-8 w3layouts mt-lg-0 mt-sm-5 mt-4 w3-icon-grid1">
+				<h3><span class="" aria-hidden="true"></span>Data Destruction & Data Erasure
+</h3>
+				<p>We provide On-Site & Off-site services following your sanitization strategy with audit reports.</p>
+			</div>
+
+			<div class="col-lg-6 col-md-8 w3layouts mt-lg-0 mt-sm-5 w3-icon-grid1">
+				<h3><span class="" aria-hidden="true"></span>Logistics
+</h3>
+				<p>We assure systematic measurement, tracking and audit process during transit adhering to compliance of carbon footprint.</p>
+			</div>
+
+		</div>
+	</div>
+</section>
+<!-- //services -->
+
+<!-- experience -->
+<section class="experience py-5" id="experience">
+	<div class="container py-3">
+		<h3 class="heading">Process</h3>
+		<div class="row exp-grids">
+			
+			<%=image_tag ("echakra.png"),class: "img-fluid"%>
+
+				
+		</div>
+	</div>
+</section>
+
+
+<!-- text -->
+<div class="text py-lg-5 py-5 text-center" id="text">
+	<div class="container py-sm-3">
+		<h5 class="w3pvt-title text-white">Recycling the e-waste saves space in landfills and prevents the environmental pollution caused by the toxins.</h5>
+	</div>
+</div>
+<!-- //text -->
+
+<!-- contact -->
+<section class="contact py-5" id="contact">
+	<div class="container py-3">
+		<h3 class="heading">Contact</h3>
+		<div class="row contact-grids">
+			<div class="col-lg-5 contact-left">
+				<h4 class="mb-4">Address Info</h4>
+				<div class="row">
+					<div class="col-1 pr-0 icon">
+						<span class="fa fa-map-marker" aria-hidden="true"></span>
+					</div>
+					<div class="col-11">
+						<p>SB/47, 1st Cross, 1st Stage. Peenya Industrial Area. Bengaluru 560 058</p>
+						<p>  Karnataka</p>
+					</div>
+					<div class="col-1 pr-0 icon my-2">
+						<span class="fa fa-phone" aria-hidden="true"></span>
+					</div>
+					<div class="col-11 my-2">
+						<p> +91 6364 22 7171 / 08O 2973 8033</p>
+					</div>
+					<div class="col-1 pr-0 icon">
+						<span class="fa fa-envelope-open" aria-hidden="true"></span>
+					</div>
+					<div class="col-11">
+						<p><a href="mailto:example@email.com"> ewaste@echakraindia.com</a></p>
+					</div>
+				
+				</div>
+			</div>
+			<div class="col-lg-7 mt-lg-0 mt-5 contact-right">
+				<h4 class="mb-4">Get In Touch</h4>
+					  <%=form_for   @secureechakras do |f| %>
+            <div class="form-group contact-forms">
+              <%= f.text_field :name,:maxlength=>"44",placeholder:'Name',class: "form-control"%>
+              </div>
+            <div class="form-group contact-forms">
+             <%= f.email_field :email,:maxlength=>"44",placeholder:'E-Mail',class: "form-control"%>
+            </div>
+            <div class="form-group contact-forms">
+             <%= f.text_field :phone_number,:maxlength=>"44",placeholder:'Phone Number',class: "form-control"%>
+            </div>
+            <div class="form-group contact-forms">
+             <%= f.text_field :message,:maxlength=>"1004",placeholder:'Message',class: "form-control"%>
+            </div>
+            <%= f.submit"Send",class: "btn btn-dark"%></p>
+          </form>
+          <%end%>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- //contact -->
+
+<!-- footer -->
+<footer class="py-5">
+	<div class="container">
+		<div class="w3layoutsinfo-grids">
+			<div class="w3layouts-grid-left w3layouts-grid-right text-center">
+				<div class="social mb-4">
+					<ul>
+						<li><a href="https://www.facebook.com/eChakraIndia/"><span class="fa mr-2 fa-facebook" target="_blank"></span></a></li>
+						<li><a href="https://in.linkedin.com/in/echakra-innovations-2487631a4"><span class="fa mr-2 fa-linkedin" target="_blank"></span></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="copyright text-center">
+			<p> <a> © E-Chakra Innovations <%=Time.now.strftime("%m/%d/%Y")%></a> </p>
+			<a href="#home" class="move-top scroll"><span class="fa fa-angle-up" aria-hidden="true"></span></a>
+		</div>
+	</div>
+</footer>
+<!-- //footer -->
+
+<!-- //popup for gallery -->
+
+</body>
+</html>

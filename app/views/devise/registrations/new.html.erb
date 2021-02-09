@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <!--meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    <link href="//fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Oxygen:400,700" rel="stylesheet">
+  </head>
+  <div clsss = "row">
+  <body class = "post">
+<div class="col-md-6 col-4 mx-auto">
+</br>
+</br>
+</br>
+<h2 class="text-center sign-head"><b>Sign up</b></h2>
+</br>
+
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= render "devise/shared/error_messages", resource: resource %>
+
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.email_field :email, autofocus: true, autocomplete: "email",autofocus: true,:size=>"50",:maxlength=>"55",class: "form-control",placeholder: "Email" %>
+  </div>
+ </br>
+  <div class="field">
+    <%= f.label :password %>
+    <% if @minimum_password_length %>
+    <em>(<%= @minimum_password_length %> characters minimum)</em>
+    <% end %><br />
+    <%= f.password_field :password, autocomplete: "new-password",autofocus: true,:size=>"50",:maxlength=>"55",class: "form-control" %>
+  </div>
+ </br>
+
+  <div class="field">
+    <%= f.label :password_confirmation %><br />
+    <%= f.password_field :password_confirmation, autocomplete: "new-password",autofocus: true,:size=>"50",:maxlength=>"55",class: "form-control" %>
+  </div>
+ </br>
+
+  <div class="actions">
+    <%= f.submit "Sign up",class: "btn btn-success" %>
+  </div>
+<% end %>
+
+<%= render "devise/shared/links" %>
+
+</br>
+</br>
+</br>
+</br>
+</div>
+
+<div class="footer1">
+<div class="w3-container w3-center w3-opacity w3-margin-bottom">
+  <div class="w3-xlarge w3-padding-16">
+</br>
+
+     <h6>Powered by E Chakra Innovations
+</h6>
+  </div>
+ 
+</div>
+</div>
+
+</div>
+</div>
+
+</body>
+</html>
